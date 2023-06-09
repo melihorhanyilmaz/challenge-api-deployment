@@ -5,5 +5,5 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-README:md
+README.md
 __pycache__/
