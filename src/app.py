@@ -5,8 +5,11 @@ from preprocessing.cleaning_data import preprocess
 from pydantic import BaseModel
 from fastapi.encoders import jsonable_encoder
 from typing import Literal, Optional
+import os
 
-app = FastAPI()
+PORT = os.environ.get("PORT", 8000)
+
+app = FastAPI(port = PORT)
 
 class Data1(BaseModel):
 
