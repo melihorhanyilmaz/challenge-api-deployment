@@ -1,6 +1,6 @@
 import pickle
 
-with open("models\\model.sav", 'rb') as file:
+with open("./models/model.sav", 'rb') as file:
     loaded_model = pickle.load(file)
     
 
